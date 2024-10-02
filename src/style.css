@@ -1,0 +1,289 @@
+body{
+    background: linear-gradient(173deg, #4d29ff 13%, #ffffff 41%);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#pozamea{
+    border: 2px solid black;
+    border-radius: 5%;
+}
+
+#prima{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.6%;
+    flex: 1;
+}
+
+#about{
+    background-color:whitesmoke;
+    font-family: 'Roboto';
+    max-width: 75ch;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    min-height: 28vh;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: auto;
+    font-size: 1em;
+}
+
+img{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    width: 31vh;
+}
+
+#me{
+    font-size: 2rem;
+}
+
+#about>div{
+    margin: 2%;
+}
+
+i{
+    font-size: 2em;
+}
+
+i:hover{
+    cursor: pointer;
+}
+
+.loc-contacte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    color: #000000;
+    text-decoration: none;
+}
+
+#nume{
+    display:none;
+}
+
+#header-proiect{
+    display: flex;
+    width: 66%;
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.proiect{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.proiect>div{
+    margin: 2%;
+}
+
+#content{
+    display: grid;
+    min-height: 60vh;
+    width: 85%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 55px;
+    justify-content: center;
+    margin-top: 3%;
+    align-items: center;
+}
+
+.imagine-proiect{
+    margin-bottom: 2%;
+}
+
+.imagine-proiect:hover{
+    border: 3px solid #4d29ff;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.imagine-proiect:not(:hover){
+    border: 3px solid rgb(48, 48, 48);
+    transition: 0.3s;
+}
+
+#titlu-proiect{
+    font-family: 'Roboto';
+    font-size: 1.25rem;
+    text-align: start;
+
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+
+#descriere-proiect{
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 1rem;
+    width: 60%;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* Enforce the 16:9 aspect ratio */
+    overflow: hidden; /* Prevents overflow of the image */
+    border-radius: 25px; /* Apply the border radius to the container */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; /* Keep box shadow on container */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+    object-position: top; /* Ensures the image is stuck to the top */
+    border-radius: inherit; /* Inherit the border radius from the container */
+}
+
+svg{
+    filter: brightness(0) invert(1);
+
+    width: 35px;
+}
+
+#telefon,#gmail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#telefon>div, #gmail>div{
+    font-size: 20px;
+    font-family: 'Roboto';
+    margin: 2%;
+}
+
+img{
+    border-radius: 25px;
+    border: 3px solid rgb(43, 43, 43);
+}
+
+.proiect{
+    height: 75%;
+    width: 100%;
+    justify-self: center;
+    align-items: center;
+}
+
+#end{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.6%;
+    width: 100%;
+    height: 27vh;
+    background-color: #4d29ff;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto';
+}
+#end>div{
+    margin: 5%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+#end-content>div{
+    margin: 1%;
+}
+
+#contact-me{
+    font-size: 3.2rem;
+    text-align: center;
+}
+#get-in-touch{
+    max-width: 25ch;
+}
+
+@media (max-width: 600px) {
+    #prima{
+        flex-direction: column;
+    }    
+    img{
+        width: 30vh;
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+    #about{
+        margin: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #content {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .proiect {
+        height: auto; /* Allow height to adjust */
+        width: 90%; /* Use a percentage width */
+        max-width: 400px; /* Prevent the image from being too large */
+        justify-self: center; /* Ensure the project is centered */
+    }
+    #descriere-proiect{
+        font-size: 1.1rem;
+        width: 85%;
+    }
+    #content{
+        gap: 15px;
+    }
+    #contact-me{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    #end{
+        height: 35vh;
+    }
+}
+
+@media (min-width: 600px) and (max-width:1250px) {
+    #prima{
+        flex-direction: column;
+    }    
+    img{
+        width: 25vh;
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+    #about{
+        margin: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #content {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    #titlu-proiect{
+        font-size: 1.2rem;
+        width: 100%;
+    }
+}
+
+@media (min-width: 970px) and (max-width:1250px) {
+    #header-proiect{
+        width: 40%;
+    }
+}
+
+
